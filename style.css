@@ -1,0 +1,97 @@
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    background-color: #85b91e;
+    color: white;
+    border: none;
+}
+.hide {
+    display: none;
+}
+/*.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top: 0;
+    background-color: #85b91e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+}*/
+.overlay-nav {
+    text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+/*.overlay-content {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    display: block;
+    -webkit-transition: left 0.3 ease;
+    -moz-transition: left 0.3 ease;
+    -o-transition: left 0.3 ease;
+    -ms-transition: left 0.3 ease;
+    transition: font-size 0.3s ease,
+}*/
+.overlay-hugeinc{
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-content ul {
+    list-style-type: none;
+}
+/*.overlay-content li a {
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 45%;
+    opacity: 0.5;
+    width: 200px;
+    margin-bottom: 20px;
+}*/
+
+/*.overlay-content li a:hover {
+    font-size: 48px;
+    opacity: 1;
+    left: 40%;
+}*/
+.overlay a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay-close {
+    font-size: 48px;
+    position: fixed;
+    right: 4%;
+    cursor: pointer;
+    color: white;
+}
