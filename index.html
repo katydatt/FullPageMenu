@@ -7,21 +7,20 @@
     </head>
     <body>
 
-        <button class="menu" id="menu-btn"> Menu </button>
+        <button class="menu" id="btn"> Click me </button>
+            <div class="overlay hide" id="nav-menu">
+                <span type="button" class="overlay-close" id="close-btn">  &times;  </span>
+                <nav class="overlay-content" id="nav">
+                    <ul id="list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
 
-        <div class="overlay overlay-hugeinc hide" id="nav-menu">
-            <span type="button" class="overlay-close">  &times;  </span>
-            <nav class="overlay-content">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    <script type="text/javascript" src="app.js"></script>
+            </div>
+            <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
