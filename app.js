@@ -7,10 +7,8 @@ var links = document.getElementsByTagName("li");
 // OPEN OVERLAY
 
 btn.addEventListener("click", function() {
-    console.log("lol");
-    btn.classList.add("hide");
-    fullPageMenu.classList.remove("hide");
-    fullPageMenu.classList.add("show");
+    fullPageMenu.classList.toggle("hide");
+    fullPageMenu.classList.toggle("show");
     for(var i = 0; i < links.length; i++) {
 
         links[i].classList.add("animation-overlay");
@@ -21,10 +19,9 @@ btn.addEventListener("click", function() {
 // CLOSE OVERLAY
 
 closeBtn.addEventListener('click', function() {
-    console.log("close");
     fullPageMenu.classList.remove("animation-overlay");
-    fullPageMenu.classList.remove("show");
+    fullPageMenu.classList.toggle("show");
+    fullPageMenu.classList.toggle("hide");
     nav.classList.remove("overlay");
-    btn.classList.remove("hide");
 
 });
